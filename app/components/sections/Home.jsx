@@ -21,9 +21,9 @@ const Home = () => {
                 muted={muted}
                 disablePictureInPicture
                 />
-            <div className="absolute bottom-64 px-4 w-full flex justify-end">
+            <div className="absolute bottom-[70%] md:bottom-40 xl:bottom-64 px-4 w-full flex justify-end">
                 <button onClick={toggleMute}>
-                    {!muted ? <FaVolumeUp className="border-4 rounded-full bg-black p-2" size={'64px'} color="white" /> : <FaVolumeMute className="border-4 rounded-full bg-black p-2" size={'64px'} color="white" />}
+                    {!muted ? <FaVolumeUp className=" border-2 p-2 text-[46px] md:border-4 rounded-full bg-black md:p-2 md:text-[64px]" color="white" /> : <FaVolumeMute className=" border-2 p-2 text-[46px] md:border-4 rounded-full bg-black md:p-2 md:text-[64px]" color="white" />}
                 </button> 
             </div>
             <div className="hidden md:block relative md:bottom-28 lg:bottom w-full">

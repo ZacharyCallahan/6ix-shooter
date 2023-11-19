@@ -15,7 +15,7 @@ const Nav = () => {
                 </Link>
 
                 {/* Navigation Items */}
-                <ul className="flex w-full justify-center gap-4 items-center text-sm md:gap-6 md:text-lg">
+                <ul className="flex w-full md:w-fit justify-center gap-4 items-center text-sm md:gap-6 md:text-lg">
                     <li className="font-medium hover:text-6sixshooter-blue hover:underline transition-all duration-300 ease-in-out">
                         <Link href={"https://www.tiktok.com/@the6ixshooter"} className="text-xl">
                             TikTok
