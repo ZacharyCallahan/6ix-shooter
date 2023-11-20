@@ -1,9 +1,11 @@
-import Home from "./components/sections/Home"
-import FeaturesSection from "./components/sections/FeaturesSection"
-import SuccessStories from "./components/sections/SucessStories"
 import AppSection from "./components/sections/AppSection"
-import WhoIsSection from "./components/sections/WhoIsSection"
 import ContactUs from "./components/sections/ContactUs"
+import FeaturesSection from "./components/sections/FeaturesSection"
+import Home from "./components/sections/Home"
+import IsItRightForYouSection from "./components/sections/isitright/IsItRightForYouSection"
+import SuccessStories from "./components/sections/SucessStories"
+import VideoSection from "./components/sections/video/VideoSection"
+import WhoIsSection from "./components/sections/whois/WhoIsSection"
 export default function Page() {
   return (
     <main>
@@ -12,6 +14,8 @@ export default function Page() {
       <SuccessStories />
       <AppSection />
       <WhoIsSection />
+      <IsItRightForYouSection />
+      <VideoSection />
       <ContactUs />
     </main>
   )

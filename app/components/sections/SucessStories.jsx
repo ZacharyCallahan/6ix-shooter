@@ -1,8 +1,8 @@
 'use client'
-import React, { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
 import { StarIcon } from '@heroicons/react/solid';
+import { motion } from 'framer-motion';
 import Link from 'next/link';
+import React, { useEffect, useState } from 'react';
 
 const wrap = (index, length) => {
     if (length === 0) return 0; // Avoid division by zero
@@ -79,9 +79,9 @@ const SuccessStories = () => {
         }, 6000); // Change 3000 to your desired interval in milliseconds
         return () => clearInterval(interval); // Clean up the interval on component unmount
     }, [page]);
-    const testimonialIndex = wrap(page, testimonials.length) ;
+    const testimonialIndex = wrap(page, testimonials.length);
 
-      return (
+    return (
         <section className="bg-primary-gray py-12 px-4">
             <div className="max-w-6xl mx-auto">
                 {/* Overall Ratings Summary */}
@@ -101,48 +101,48 @@ const SuccessStories = () => {
                 <h3 className="text-4xl font-extrabold text-center text-6sixshooter-blue mb-5">
                     Our Success Stories
                 </h3>
-                  <div className="relative overflow-hidden">
-                      <motion.div
-                          key={page}
-                          custom={direction}
-                          variants={variants}
-                          initial="enter"
-                          animate="center"
-                          exit="exit"
-                          transition={{
-                              x: { type: "spring", stiffness: 300, damping: 60 },
-                              opacity: { duration: 0.3 },
-                          }}
-                          drag="x"
-                          dragConstraints={{ left: 0, right: 0 }}
-                          dragElastic={1}
-                          onDragEnd={(e, { offset, velocity }) => {
-                              const swipe = swipePower(offset.x, velocity.x);
-                              if (swipe < -swipeConfidenceThreshold) {
-                                  paginate(1);
-                              } else if (swipe > swipeConfidenceThreshold) {
-                                  paginate(-1);
-                              }
-                          }}
-                          className='flex justify-center items-center h-60'
-                      >
-                          {/* Testimonial card */}
-                          <div className="testimonial-card bg-white p-4 shadow-md rounded-lg w-2/3 transition duration-300 ease-in-out hover:scale-105 h-fit">
-                              {/* Replace this with your testimonial content */}
-                              <div className="flex items-center mb-1">
-                                  {Array.from({ length: testimonials[testimonialIndex].rating }, (_, i) => (
-                                      <StarIcon key={i} className="text-yellow-400 w-8 h-8" />
-                                  ))}
-                              </div>
-                              <h4 className="text-lg font-semibold mb-2">{testimonials[testimonialIndex].title}</h4>
-                              <p className="text-gray-600 mb-4">{testimonials[testimonialIndex].review}</p>
-                              <p className="text-gray-500 text-sm">{testimonials[testimonialIndex].name} - <span className="font-semibold">{testimonials[testimonialIndex].date}</span></p>
-                          </div>
-                      </motion.div>
-                  </div>
+                <div className="relative overflow-hidden">
+                    <motion.div
+                        key={page}
+                        custom={direction}
+                        variants={variants}
+                        initial="enter"
+                        animate="center"
+                        exit="exit"
+                        transition={{
+                            x: { type: "spring", stiffness: 300, damping: 60 },
+                            opacity: { duration: 0.3 },
+                        }}
+                        drag="x"
+                        dragConstraints={{ left: 0, right: 0 }}
+                        dragElastic={1}
+                        onDragEnd={(e, { offset, velocity }) => {
+                            const swipe = swipePower(offset.x, velocity.x);
+                            if (swipe < -swipeConfidenceThreshold) {
+                                paginate(1);
+                            } else if (swipe > swipeConfidenceThreshold) {
+                                paginate(-1);
+                            }
+                        }}
+                        className='flex justify-center items-center h-60'
+                    >
+                        {/* Testimonial card */}
+                        <div className="border-2 border-gray-400 testimonial-card bg-gray-100 p-4 shadow-md rounded-sm w-2/3 transition duration-300 ease-in-out hover:scale-105 h-fit">
+                            {/* Replace this with your testimonial content */}
+                            <div className="flex items-center mb-1">
+                                {Array.from({ length: testimonials[testimonialIndex].rating }, (_, i) => (
+                                    <StarIcon key={i} className="text-yellow-400 w-8 h-8 " />
+                                ))}
+                            </div>
+                            <h4 className="text-lg font-semibold mb-2">{testimonials[testimonialIndex].title}</h4>
+                            <p className="text-gray-600 mb-4">{testimonials[testimonialIndex].review}</p>
+                            <p className="text-gray-500 text-sm">{testimonials[testimonialIndex].name} - <span className="font-semibold">{testimonials[testimonialIndex].date}</span></p>
+                        </div>
+                    </motion.div>
+                </div>
                 {/* Call to Action Button */}
                 <div className="text-center mt-6">
-                      <Link href={"https://apps.apple.com/us/app/6ixshooter-academy-training/id1665280308"} className="px-6 py-3 bg-6sixshooter-blue text-white text-2xl font-bold rounded-lg shadow-lg hover:bg-blue-600 transition duration-300 ease-in-out hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-300">
+                    <Link href={"https://apps.apple.com/us/app/6ixshooter-academy-training/id1665280308"} className="px-6 py-3 bg-6sixshooter-blue text-white text-2xl font-bold rounded-sm shadow-sm shadow-gray-600 hover:bg-blue-600 transition duration-300 ease-in-out hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-300 border-2 border-gray-400 ">
                         Join The Academy Today
                     </Link>
                 </div>

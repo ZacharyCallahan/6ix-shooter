@@ -22,7 +22,7 @@ const ContactUs = () => {
                                 <label htmlFor="message" className="block text-lg">Message</label>
                                 <textarea id="message" rows="4" className="w-full p-2 rounded bg-gray-200 text-gray-800"></textarea>
                             </div>
-                            <button type='submit' className="px-4 py-2 bg-6sixshooter-blue text-white text-xl font-bold rounded-lg shadow-lg hover:bg-blue-600 transition duration-300 ease-in-out hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-300">
+                            <button type='submit' className="px-4 py-2 bg-6sixshooter-blue text-white text-xl font-bold rounded-sm shadow-sm hover:bg-blue-600 transition duration-300 ease-in-out hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-300 border-2 border-gray-400 shadow-gray-600">
                                 Send Message
                             </button>
                         </form>
