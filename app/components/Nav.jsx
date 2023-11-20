@@ -16,18 +16,18 @@ const Nav = () => {
 
                 {/* Navigation Items */}
                 <ul className="flex w-full md:w-fit justify-center gap-4 items-center text-sm md:gap-6 md:text-lg">
-                    <li className="font-medium hover:text-6sixshooter-blue hover:underline transition-all duration-300 ease-in-out">
+                    <li className="font-medium hover:text-6ixshooter-blue hover:underline transition-all duration-300 ease-in-out">
                         <Link href={"https://www.tiktok.com/@the6ixshooter"} className="text-xl">
                             TikTok
                         </Link>
                     </li>
-                    <li className="font-medium hover:text-6sixshooter-blue hover:underline transition-all duration-300 ease-in-out">
+                    <li className="font-medium hover:text-6ixshooter-blue hover:underline transition-all duration-300 ease-in-out">
                         <Link href={"https://www.youtube.com/@The6ixShooter"} className="text-xl">
                             Youtube
                         </Link>
                     </li>
                     <li className="font-medium">
-                        <Link href={"https://apps.apple.com/us/app/6ixshooter-academy-training/id1665280308"} className="block p-1 md:px-3 md:py-2 bg-6sixshooter-blue text-white font-bold rounded-sm md:rounded-sm shadow-sm shadow-gray-600 border-2 border-gray-400 hover:bg-blue-600 transition duration-300 ease-in-out hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-300 text-sm md:text-xl">
+                        <Link href={"https://apps.apple.com/us/app/6ixshooter-academy-training/id1665280308"} className="block p-1 md:px-3 md:py-2 bg-6ixshooter-blue text-white font-bold rounded-sm md:rounded-sm shadow-sm shadow-gray-600 border-2 border-gray-400 hover:bg-blue-600 transition duration-300 ease-in-out hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-300 text-sm md:text-xl">
                             Download the App
                         </Link>
                     </li>

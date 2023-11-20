@@ -11,10 +11,10 @@ const AppSection = () => {
     return (
         <section className="bg-gray-100 py-12 px-4">
             <div className="max-w-6xl mx-auto">
-                <h2 className="text-5xl font-bold text-center text-primary-gray mb-6">
+                <h2 className="text-3xl md:text-5xl font-bold text-center text-primary-gray mb-6">
                     WHAT'S INSIDE THE 6IXSHOOTER ACADEMY
                 </h2>
-                <p className="text-2xl text-center mb-8">
+                <p className="text-xl md:text-2xl text-center mb-8">
                     Transform your shooting game with our tailor-made training videos that cover every aspect of your shooting form, release, warm-up, practice, daily training, mindset, and accuracy.
                 </p>
 
@@ -31,7 +31,7 @@ const AppSection = () => {
                 </div>
 
 
-                <h3 className="text-3xl font-semibold text-center text-primary-gray mb-4">
+                <h3 className="text-2xl md:text-3xl font-semibold text-center text-primary-gray mb-4">
                     Track Your Progress with Daily Workouts, Drills & Challenges
                 </h3>
                 <p className="text-center mb-8 text-xl">
@@ -39,8 +39,8 @@ const AppSection = () => {
                 </p>
 
                 {/* Call to Action */}
-                <div className="text-center">
-                    <Link href={"https://apps.apple.com/us/app/6ixshooter-academy-training/id1665280308"} className="px-6 py-3 bg-6sixshooter-blue text-white text-2xl font-bold rounded-sm shadow-sm shadow-gray-600 border-2 border-gray-400 hover:bg-blue-600 transition duration-300 ease-in-out hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-300">
+                <div className="flex justify-center">
+                    <Link href={"https://apps.apple.com/us/app/6ixshooter-academy-training/id1665280308"} className="w-fit block px-6 py-3 bg-6ixshooter-blue text-white text-2xl font-bold rounded-sm shadow-sm shadow-gray-600 border-2 border-gray-400 hover:bg-blue-600 transition duration-300 ease-in-out hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-300">
                         Download the App
                     </Link>
                 </div>

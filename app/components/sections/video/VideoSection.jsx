@@ -18,13 +18,13 @@ const VideoSection = () => {
     return (
         <section className="py-12 px-4 bg-primary-gray text-white">
             <div className="text-center mb-10">
-                <h2 className="text-5xl font-bold mb-4 text-6sixshooter-blue">READY TO BE OUR NEXT SUCCESS STORY?</h2>
+                <h2 className="text-4xl md:text-5xl font-bold mb-4 text-6ixshooter-blue">READY TO BE OUR NEXT SUCCESS STORY?</h2>
                 <p className="text-2xl mb-6">This Is Just A Few Of The Success Stories From Shooters All Over The World.</p>
             </div>
 
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {successStories.map((story, index) => (
-                    <VideoEmbed 
+                    <VideoEmbed
                         key={index}
                         index={index}
                         story={story}

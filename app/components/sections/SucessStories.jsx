@@ -86,9 +86,9 @@ const SuccessStories = () => {
             <div className="max-w-6xl mx-auto">
                 {/* Overall Ratings Summary */}
                 <div className="text-white text-center mb-10">
-                    <h2 className="text-5xl font-bold">6ixShooter Academy Training</h2>
+                    <h2 className="text-3xl md:text-5xl font-bold">6ixShooter Academy Training</h2>
                     <div className="flex justify-center items-center mt-4  transition duration-300 ease-in-out hover:scale-105 ">
-                        <span className="text-5xl font-bold">{averageRating.toFixed(1)}</span>
+                        <span className="text-3xl md:text-5xl font-bold">{averageRating.toFixed(1)}</span>
                         <div className="flex ml-2">
                             {Array.from({ length: 5 }, (_, i) => (
                                 <StarIcon key={i} className={`w-12 h-12 ${i < Math.round(averageRating) ? 'text-yellow-400' : 'text-gray-300'}`} />
@@ -98,7 +98,7 @@ const SuccessStories = () => {
                     <p className="mt-1">{totalRatings} Ratings and Reviews</p>
                 </div>
                 {/* Individual Testimonials */}
-                <h3 className="text-4xl font-extrabold text-center text-6sixshooter-blue mb-5">
+                <h3 className="text-2xl md:text-4xl font-extrabold text-center text-6ixshooter-blue mb-5">
                     Our Success Stories
                 </h3>
                 <div className="relative overflow-hidden">
@@ -141,8 +141,8 @@ const SuccessStories = () => {
                     </motion.div>
                 </div>
                 {/* Call to Action Button */}
-                <div className="text-center mt-6">
-                    <Link href={"https://apps.apple.com/us/app/6ixshooter-academy-training/id1665280308"} className="px-6 py-3 bg-6sixshooter-blue text-white text-2xl font-bold rounded-sm shadow-sm shadow-gray-600 hover:bg-blue-600 transition duration-300 ease-in-out hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-300 border-2 border-gray-400 ">
+                <div className="flex justify-center mt-6">
+                    <Link href={"https://apps.apple.com/us/app/6ixshooter-academy-training/id1665280308"} className="block w-fit px-6 py-3 bg-6ixshooter-blue text-white text-2xl font-bold rounded-sm shadow-sm shadow-gray-600 hover:bg-blue-600 transition duration-300 ease-in-out hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-300 border-2 border-gray-400 ">
                         Join The Academy Today
                     </Link>
                 </div>

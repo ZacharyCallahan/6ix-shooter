@@ -7,7 +7,7 @@ const IsItRightForYouSection = () => {
         <section className="py-12 px-4 bg-gray-100">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-10">
-                    <div className="text-5xl font-bold text-primary-gray mb-4 leading">
+                    <div className="text-4xl md:text-5xl font-bold text-primary-gray mb-4 leading">
                         <h2 >IS THE "6IXSHOOTER" SYSTEM</h2>
                         <h2 className='text-red-600'>RIGHT FOR YOU?</h2>
                     </div>
@@ -28,7 +28,7 @@ const IsItRightForYouSection = () => {
                     </p>
                 </div>
 
-                <div className="flex flex-col md:flex-row justify-between gap-8">
+                <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-8">
                     {/* Who It's For */}
                     <WhoNotWhoIs
                         header={"WHO IT'S FOR"}

@@ -14,7 +14,7 @@ const Embeds = ({ children }) => {
         <>
             {
                 isClient &&
-                <div className="w-fit">
+                <div className="w-fit pt-12">
                     {children}
                 </div>
             }

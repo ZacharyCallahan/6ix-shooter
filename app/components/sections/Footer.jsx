@@ -34,8 +34,8 @@ const Footer = () => {
                     Mt Solutions, LLC
                     3639 Midway Dr, Suit B #207, SAN DIEGO, CA 92110
                     <br />
-                    <Link href="tel:+18184309202" className="hover:underline text-blue-500">
-                        +18184309202
+                    <Link href="tel:+18184309202" className="hover:underline text-6ixshooter-blue">
+                        +1-818-430-9202
                     </Link>
                 </p>
 

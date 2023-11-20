@@ -13,7 +13,7 @@ const VideoEmbed = ({ story, src }) => {
             <h3 className="text-2xl font-semibold">{story.name}</h3>
             <p className="text-lg">{story.title}</p>
 
-            <iframe src={src} height={384} />
+            <iframe src={src} height={384} width={220} />
             
         </div>
     );

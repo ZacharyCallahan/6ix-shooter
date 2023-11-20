@@ -9,12 +9,16 @@ const WhoIsSection = () => {
 
     return (
         <section className="py-12 px-4  bg-primary-gray">
-            <div className="container mx-auto  flex flex-col md:flex-row justify-between  space-y-8 md:space-y-0 ">
-                <div className='flex flex-col '>
-                    <div className="space-y-6 w-full md:w-2/3 ">
-                        <h2 className="text-5xl md:text-5xl font-bold text-left text-6sixshooter-blue mb-6">
-                            Who is Seth McCoy? <span className='text-white text-3xl pl-12'>*193 3's in row</span>
+            <div className="max-w-7xl mx-auto  flex flex-col lg:flex-row lg:justify-between items-center space-y-8 md:space-y-0 ">
+                <div className='flex flex-col lg:items-start items-center'>
+                    <div className="space-y-6 w-full lg:w-2/3 ">
+                        <div className='flex flex-col lg:flex-row lg:gap-6'>
+
+                        <h2 className="text-4xl md:text-5xl font-bold text-left text-6ixshooter-blue  w-full">
+                            Who is Seth McCoy? 
                         </h2>
+                        <span className='text-white text-3xl'>*193 3's in row</span>
+                        </div>
                         <p className="text-lg md:text-2xl text-left text-white mx-auto mb-6">
                             Known as "6IXSHOOTER", Seth McCoy is celebrated for his legendary shooting skills and transformative coaching.
                         </p>
@@ -45,7 +49,7 @@ const WhoIsSection = () => {
                 </Embeds>
 
             </div>
-            <div className=' container mx-auto flex justify-around mt-16'>
+            <div className=' max-w-7xl mx-auto flex justify-around mt-16 gap-6'>
                 <div className='flex flex-col gap-12'>
                     <WhoisImage
                         src="/whois/6ixShooterAcademytop3.jpg"
