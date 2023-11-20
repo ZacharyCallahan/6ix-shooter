@@ -5,7 +5,8 @@ const WhoIsSection = () => {
 
     return (
         <section className="py-12 px-4  bg-primary-gray">
-            <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0 ">
+            <div className="container mx-auto flex flex-col md:flex-row justify-between  space-y-8 md:space-y-0 ">
+                <div className='flex flex-col '>
                 <div className="space-y-6 w-full md:w-2/3">
                     <h2 className="text-3xl md:text-5xl font-bold text-left text-6sixshooter-blue mb-6">
                         Who is Seth McCoy?
@@ -13,15 +14,14 @@ const WhoIsSection = () => {
                     <p className="text-lg md:text-xl text-left text-white mx-auto mb-6">
                         Known as "6IXSHOOTER", Seth McCoy is celebrated for his legendary shooting skills and transformative coaching.
                     </p>
-
-                    {/* Highlight Points */}
-                    <ul className="list-disc space-y-4 text-white mx-auto text-lg md:max-w-3xl">
-                        <li>Renowned for setting the "193 in a Row" shooting record, witnessed live by fans worldwide.</li>
-                        <li>Established a remarkable 24-hour shooting record with an 88.4% success rate.</li>
-                        <li>Featured on ESPN, Sportscenter, and other top sports networks for his unparalleled skills.</li>
-                        <li>With over 600,000 followers, he's training the next generation of elite basketball players.</li>
-                        <li>Former NCAA YoungHarris record holder for the most three-pointers in a season.</li>
-                        <li>Has trained more than 15,000 basketball players globally, from high school amateurs to professional athletes.</li>
+                </div>
+                <ul className="list-disc space-y-4 text-white mx-auto text-lg md:max-w-3xl">
+                    <li>Renowned for setting the "193 in a Row" shooting record, witnessed live by fans worldwide.</li>
+                    <li>Established a remarkable 24-hour shooting record with an 88.4% success rate.</li>
+                    <li>Featured on ESPN, Sportscenter, and other top sports networks for his unparalleled skills.</li>
+                    <li>With over 600,000 followers, he's training the next generation of elite basketball players.</li>
+                    <li>Former NCAA YoungHarris record holder for the most three-pointers in a season.</li>
+                    <li>Has trained more than 15,000 basketball players globally, from high school amateurs to professional athletes.</li>
 
                     </ul>
                 </div>

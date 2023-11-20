@@ -21,13 +21,14 @@ const Home = () => {
                 muted={muted}
                 disablePictureInPicture
                 />
-            <div className="absolute bottom-[70%] md:bottom-40 xl:bottom-64 px-4 w-full flex justify-end">
-                <button onClick={toggleMute}>
-                    {!muted ? <FaVolumeUp className=" border-2 p-2 text-[46px] md:border-4 rounded-full bg-black md:p-2 md:text-[64px]" color="white" /> : <FaVolumeMute className=" border-2 p-2 text-[46px] md:border-4 rounded-full bg-black md:p-2 md:text-[64px]" color="white" />}
-                </button> 
-            </div>
-            <div className="hidden md:block relative md:bottom-28 lg:bottom w-full">
-                <div className="flex flex-col md:flex-row justify-between items-center px-4 w-full">
+            
+            <div className="relative md:bottom-28 w-full">
+                <div className="absolute md:bottom-24 bottom-6 px-4 w-full flex justify-end">
+                    <button onClick={toggleMute}>
+                        {!muted ? <FaVolumeUp className=" border-2 p-2 text-[46px] md:border-4 rounded-full bg-black md:p-2 md:text-[64px]" color="white" /> : <FaVolumeMute className=" border-2 p-2 text-[46px] md:border-4 rounded-full bg-black md:p-2 md:text-[64px]" color="white" />}
+                    </button>
+                </div>
+                <div className="hidden md:flex flex-col md:flex-row justify-between items-center px-4 w-full">
                     <Link href={"https://apps.apple.com/us/app/6ixshooter-academy-training/id1665280308"} className="block w-fit p-2 lg:px-7 lg:py-4 bg-6sixshooter-blue text-white  text-xl lg:text-2xl font-bold rounded-lg shadow-lg hover:bg-blue-600 transition duration-300 ease-in-out hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-300 mb-4 md:mb-0 text-center">
                         DOWNLOAD THE 6IXSHOOTER APP TODAY
                     </Link>
