@@ -9,7 +9,7 @@ const Nav = () => {
     return (
         <nav className="bg-primary-gray py-4 top-0 w-full z-10 text-white shadow-md">
             {/* Container */}
-            <div className="lg:container mx-auto flex justify-between items-center px-4">
+            <div className="lg:container mx-auto flex justify-between items-center gap-6 px-4">
 
                 {/* Logo and Brand Name */}
                 <Link className="hidden md:inline-block" href={'/'}>
@@ -20,7 +20,7 @@ const Nav = () => {
 
                 {/* Navigation Items */}
                 <ul className="flex w-full md:w-fit justify-center gap-4 items-center text-sm md:gap-6 md:text-lg">
-                    <li className="font-medium hover:text-6ixshooter-blue hover:underline transition-all duration-300 ease-in-out flex items-center gap-3">
+                    <li className="font-medium hover:text-6ixshooter-blue hover:underline transition-all duration-300 ease-in-out flex items-center gap-2">
                         <IoMdContact className="inline-block text-2xl" />
                         <NavLink
                             label={"Contact"}
@@ -28,7 +28,7 @@ const Nav = () => {
                             elementId={"contact"}
                         />
                     </li>
-                    <li className="font-medium hover:text-6ixshooter-blue hover:underline transition-all duration-300 ease-in-out flex items-center gap-3">
+                    <li className="font-medium hover:text-6ixshooter-blue hover:underline transition-all duration-300 ease-in-out flex items-center gap-2">
                         <FaTiktok className="inline-block text-2xl " />
                         <NavLink
                             label={"TikTok"}
@@ -36,7 +36,7 @@ const Nav = () => {
                         />
                         
                     </li>
-                    <li className="font-medium hover:text-6ixshooter-blue hover:underline transition-all duration-300 ease-in-out flex items-center gap-3">
+                    <li className="font-medium hover:text-6ixshooter-blue hover:underline transition-all duration-300 ease-in-out flex items-center gap-2">
                         <FaYoutube className="inline-block text-2xl " />
                         <NavLink
                             label={"Youtube"}
