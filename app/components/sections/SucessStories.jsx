@@ -3,6 +3,7 @@ import { StarIcon } from '@heroicons/react/solid';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
+import DownloadButton from '../DownloadButton';
 
 const wrap = (index, length) => {
     if (length === 0) return 0; // Avoid division by zero
@@ -86,7 +87,7 @@ const SuccessStories = () => {
             <div className="max-w-6xl mx-auto">
                 {/* Overall Ratings Summary */}
                 <div className="text-white text-center mb-10">
-                    <h2 className="text-3xl md:text-5xl font-bold">6ixShooter Academy Training</h2>
+                    <h2 className="text-4xl md:text-5xl font-bold">6ixShooter Academy Training</h2>
                     <div className="flex justify-center items-center mt-4  transition duration-300 ease-in-out hover:scale-105 ">
                         <span className="text-3xl md:text-5xl font-bold">{averageRating.toFixed(1)}</span>
                         <div className="flex ml-2">
@@ -98,7 +99,7 @@ const SuccessStories = () => {
                     <p className="mt-1">{totalRatings} Ratings and Reviews</p>
                 </div>
                 {/* Individual Testimonials */}
-                <h3 className="text-2xl md:text-4xl font-extrabold text-center text-6ixshooter-blue mb-5">
+                <h3 className="text-3xl md:text-4xl font-extrabold text-center text-6ixshooter-blue mb-5">
                     Our Success Stories
                 </h3>
                 <div className="relative overflow-hidden">
@@ -124,10 +125,10 @@ const SuccessStories = () => {
                                 paginate(-1);
                             }
                         }}
-                        className='flex justify-center items-center h-60'
+                        className='flex justify-center items-center h-96 sm:h-72 '
                     >
                         {/* Testimonial card */}
-                        <div className="border-2 border-gray-400 testimonial-card bg-gray-100 p-4 shadow-md rounded-sm w-2/3 transition duration-300 ease-in-out hover:scale-105 h-fit">
+                        <div className="border-2 border-gray-400 testimonial-card bg-gray-100 p-4 shadow-md shadow-gray-600 rounded-md w-5/6 md:w-2/3 transition duration-300 ease-in-out hover:scale-105 h-fit">
                             {/* Replace this with your testimonial content */}
                             <div className="flex items-center mb-1">
                                 {Array.from({ length: testimonials[testimonialIndex].rating }, (_, i) => (
@@ -142,9 +143,12 @@ const SuccessStories = () => {
                 </div>
                 {/* Call to Action Button */}
                 <div className="flex justify-center mt-6">
-                    <Link href={"https://apps.apple.com/us/app/6ixshooter-academy-training/id1665280308"} className="block w-fit px-6 py-3 bg-6ixshooter-blue text-white text-2xl font-bold rounded-sm shadow-sm shadow-gray-600 hover:bg-blue-600 transition duration-300 ease-in-out hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-300 border-2 border-gray-400 ">
-                        Join The Academy Today
-                    </Link>
+                    <DownloadButton
+                        href={"https://apps.apple.com/us/app/6ixshooter-academy-training/id1665280308"}
+                        content={"Join The Academy Today"}
+                        textSize={"large"}
+                    />
+
                 </div>
 
             </div>

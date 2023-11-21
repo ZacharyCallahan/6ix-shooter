@@ -6,6 +6,7 @@ import AppFeature4 from '@/public/app_photos/app-feature-4.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import DownloadButton from '../DownloadButton';
 
 const AppSection = () => {
     return (
@@ -20,13 +21,13 @@ const AppSection = () => {
 
                 {/* App features */}
                 <div className="flex flex-wrap justify-center gap-4 mb-8">
-                    <div className=" flex gap-4 flex-wrap justify-center">
-                        <Image src={AppFeature1} alt="Feature 1" className="rounded-sm shadow-sm shadow-gray-600 transition duration-300 ease-in-out hover:scale-105" width={250} height={200} />
-                        <Image src={AppFeature2} alt="Feature 2" className="rounded-sm shadow-sm shadow-gray-600 transition duration-300 ease-in-out hover:scale-105" width={250} height={200} />
+                    <div className=" flex gap-4 justify-center w-1/2 md:w-fit">
+                        <Image src={AppFeature1} alt="Feature 1" className="rounded-md shadow-md shadow-gray-600 transition duration-300 ease-in-out hover:scale-105" width={250} height={200} />
+                        <Image src={AppFeature2} alt="Feature 2" className="rounded-md shadow-md shadow-gray-600 transition duration-300 ease-in-out hover:scale-105" width={250} height={200} />
                     </div>
-                    <div className="flex gap-4 flex-wrap justify-center" >
-                        <Image src={AppFeature3} alt="Feature 3" className="rounded-sm shadow-sm shadow-gray-600 transition duration-300 ease-in-out hover:scale-105" width={250} height={200} />
-                        <Image src={AppFeature4} alt="Feature 4" className="rounded-sm shadow-sm shadow-gray-600 transition duration-300 ease-in-out hover:scale-105" width={250} height={200} />
+                    <div className="flex gap-4 justify-center w-1/2 md:w-fit" >
+                        <Image src={AppFeature3} alt="Feature 3" className="rounded-md shadow-md shadow-gray-600 transition duration-300 ease-in-out hover:scale-105" width={250} height={200} />
+                        <Image src={AppFeature4} alt="Feature 4" className="rounded-md shadow-md shadow-gray-600 transition duration-300 ease-in-out hover:scale-105" width={250} height={200} />
                     </div>
                 </div>
 
@@ -40,9 +41,11 @@ const AppSection = () => {
 
                 {/* Call to Action */}
                 <div className="flex justify-center">
-                    <Link href={"https://apps.apple.com/us/app/6ixshooter-academy-training/id1665280308"} className="w-fit block px-6 py-3 bg-6ixshooter-blue text-white text-2xl font-bold rounded-sm shadow-sm shadow-gray-600 border-2 border-gray-400 hover:bg-blue-600 transition duration-300 ease-in-out hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-300">
-                        Download the App
-                    </Link>
+                    <DownloadButton
+                        href={"https://apps.apple.com/us/app/6ixshooter-academy-training/id1665280308"}
+                        content={"Download the App"}
+                        textSize={"large"}
+                    />
                 </div>
             </div>
         </section>

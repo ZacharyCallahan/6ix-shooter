@@ -3,9 +3,9 @@ import Logo from "../Logo";
 
 const Footer = () => {
     return (
-        <footer className="bg-primary-gray text-gray-100 py-8">
+        <footer className="bg-gray-100 text-black py-8">
             <div className="container mx-auto flex flex-col items-center space-y-6">
-                <Logo width={300} height={300} />
+                <Logo width={300} height={300} color={"black"} />
 
                 <ul className="flex flex-wrap justify-center items-center gap-6 text-lg">
                     <li>
@@ -42,6 +42,7 @@ const Footer = () => {
                 <p className="text-center">
                     CopyRight © 2021 6ix Shooter Academy. All Rights Reserved.
                 </p>
+                <p className="text-center text-sm">Created With Love by <Link className="hover:underline text-6ixshooter-blue" href={"https://www.linkedin.com/in/zachary-callahan-dev/"}>Zachary Callahan</Link> </p>
             </div>
         </footer>
     );

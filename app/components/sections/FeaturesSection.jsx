@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const FeaturesSection = () => {
     return (
-        <section className=" h-auto py-12 flex flex-col items-center bg-gray-100">
+        <section className=" h-auto py-12 flex flex-col items-center bg-gray-100 border-t-2 border-primary-gray">
             <div className="container mx-auto">
                 {/* Text Content */}
                 <div className="text-center px-4 md:px-12 mb-12">
@@ -16,13 +16,13 @@ const FeaturesSection = () => {
 
                 {/* Image Gallery */}
                 <div className="flex flex-wrap justify-center items-center gap-10 mb-12">
-                    <div className="p-2 bg-primary-gray rounded-sm shadow-md shadow-gray-600 hover:scale-105 transition duration-300">
+                    <div className="p-2 bg-primary-gray rounded-md shadow-md shadow-gray-600 hover:scale-105 transition duration-300">
                         <Image src={BornToPlay} width={250} height={250} alt="Born To Play" />
                     </div>
-                    <div className="p-2 bg-primary-gray rounded-sm shadow-md shadow-gray-600 hover:scale-105 transition duration-300">
+                    <div className="p-2 bg-primary-gray rounded-md shadow-md shadow-gray-600 hover:scale-105 transition duration-300">
                         <Image src={TheGun} width={250} height={250} alt="The Gun" />
                     </div>
-                    <div className="p-2 bg-primary-gray rounded-sm shadow-md shadow-gray-600 hover:scale-105 transition duration-300">
+                    <div className="p-2 bg-primary-gray rounded-md shadow-md shadow-gray-600 hover:scale-105 transition duration-300">
                         <Image src={ChanceLogo} width={250} height={250} alt="Chance Logo" />
                     </div>
                 </div>
