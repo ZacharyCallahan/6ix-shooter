@@ -7,6 +7,7 @@ import SpecialOfferSection from "./components/sections/SpecialOfferSection"
 import SuccessStories from "./components/sections/SucessStories"
 import VideoSection from "./components/sections/video/VideoSection"
 import WhoIsSection from "./components/sections/whois/WhoIsSection"
+import TestComponent from "./components/TestComponent"
 export default function Page() {
   return (
     <main>
@@ -19,6 +20,7 @@ export default function Page() {
       <VideoSection />
       <ContactUs />
       <SpecialOfferSection />
+      <TestComponent />
     </main>
   )
 }

@@ -14,7 +14,8 @@ module.exports = {
       },
       colors: {
         '6ixshooter-blue': '#61C1DB',
-        'primary-gray': '#1A1A1A'
+        'primary-gray': '#1A1A1A',
+        'checkout-blue': "rgb(14, 141, 199)"
       
       }
     },
