@@ -29,8 +29,26 @@ const SpecialOfferSection = () => {
                             </div>
                         </div>
                             {/* Example Form Fields */}
-                            <TestComponent />
-
+                            {/* <TestComponent /> */}
+                        <div className="mb-8 w-2/3 md:w-1/3">
+                            <p><strong>* Denotes mandatory fields</strong></p>
+                            {/* Example Form Fields */}
+                            <form className="space-y-4">
+                                <div >
+                                    <label htmlFor="name" className="block text-lg">Name*</label>
+                                    <input type="text" placeholder="Full Name" className="transition duration-300 ease-in-out hover:scale-105 w-full p-2 rounded-md bg-gray-200 text-gray-800 shadow-sm shadow-gray-600" />
+                                </div>
+                                <div>
+                                    <label htmlFor="email" className="block text-lg">Email*</label>
+                                    <input type="email" placeholder="Email" className="transition duration-300 ease-in-out hover:scale-105 w-full p-2 rounded-md bg-gray-200 text-gray-800 shadow-sm shadow-gray-600" />
+                                </div>
+                                <button className=" w-full
+                            block p-2 md:px-3 md:py-2 bg-6ixshooter-blue text-white font-bold rounded-md 
+                        md:rounded-md shadow-sm shadow-gray-600  hover:bg-blue-600
+                        transition duration-300 ease-in-out hover:scale-105 focus:outline-none focus:ring-2
+                        focus:ring-blue-300 ">Start Order</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
                 <div className="text-center rounded-md max-w-7xl border-2 border-gray-400 bg-gray-100 w-fit shadow-md shadow-gray-600 p-6 xl:mx-auto mx-4 mb-6">
